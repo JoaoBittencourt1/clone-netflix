@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%); 
+    position: relative;
+    z-index: 1000; 
+}
+
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f40612;
+}
+
+
+
+
+.logo img {
+    height: 40px;  
+    width: auto;  
+}
+
+
+
+.icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+.icons {
+    font-size: x-large;
+    position: relative;
+    color: #2e2e2e;
+    
+}
+
+.icons img {
+    height: 24px;
+    width: auto;  
+    cursor: pointer;
+    border-radius: 0; 
+
+    
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    border-radius: 15px;
+    z-index: 1000;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.dropdown-menu li {
+    width: 150px;
+    
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url('https://br.web.img3.acsta.net/newsv7/20/03/04/21/11/0153546.jpg') no-repeat center center/cover;
+    margin-top: -80px;
+}
+.hero .content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+.hero .content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+.hero .content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+.hero .content .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.section {
+    padding: 50px 20px;
+}
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.section .row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+.section .row img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.footer {
+    padding: 20px;
+    background-color: #141414;
+    text-align: center;
+}
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.carousel {
+    position: relative;
+    width: 100%; 
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto; 
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-item img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+
+  .carousel-item.last-item {
+  margin-right: 0; 
+}
